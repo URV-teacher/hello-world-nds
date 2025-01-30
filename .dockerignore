@@ -1,0 +1,19 @@
+
+# Ignore all files and folders by default
+**
+
+# Allow the src folder
+!source/
+
+# Optionally, allow files within the src folder (if needed)
+!source/**
+
+# Allow makefile
+!Makefile
+
+# Allow icon data
+!data/
+
+# Allow include
+!include/
+

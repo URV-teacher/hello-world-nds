@@ -1,0 +1,8 @@
+
+services:
+  build-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./bin:/hello-world-nds/bin
