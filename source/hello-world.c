@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "hello-world.h"
 
+
 int main(int argc, char* argv[])
 {
 	consoleDemoInit();
@@ -11,7 +12,10 @@ int main(int argc, char* argv[])
         swiWaitForVBlank();
         scanKeys();
         int pressed = keysDown();
-        if(pressed & KEY_START) break;
+        if (pressed & KEY_START)
+        {
+            break;
+        }
     }
 
     return 0;

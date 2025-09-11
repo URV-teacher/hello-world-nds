@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://urv.cat">
-    <img src=".github/images/urv.jpg" alt="Logo">
+    <img src="https://raw.githubusercontent.com/URV-teacher/hosting/refs/heads/master/assets/urv.jpg" alt="Logo">
   </a>
 
 <h6 align="center">presents</h3>
@@ -265,7 +265,7 @@ Shout out to [@WinterMute](https://github.com/WinterMute) and his team that crea
 
 ## Credits
 #### Institutions involved in the hello-world-nds project
-![Logo URV](.github/images/urv.jpg)
+![Logo URV](https://raw.githubusercontent.com/URV-teacher/hosting/refs/heads/master/assets/code-urv-logo.png)
 [Universitat Rovira i Virgili (URV)](https://urv.cat/): URV, The Universitat Rovira i Virgili is the university that 
 provides southern Catalonia with a knowledge structure of international renown. Through teaching, research, knowledge 
 transfer and culture it helps society to be more just and free.
