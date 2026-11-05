@@ -165,6 +165,23 @@ port of the `bmde` environment to Linux that is used in the subjects Computers, 
 System Structure
 in the Universitat Rovira i Virgili.
 
+###### Icon
+The icon of the `.nds`, shown in the menu of the console, of flash cards and of emulators, is the `icon.bmp` in the root
+of the project. To change it, replace `icon.bmp` with your own image and build again (`make`, or `bmde build`). The
+image must be:
+* A BMP of 32x32 pixels.
+* With a palette (indexed colours, e.g. 4 or 8 bits per pixel) of at most 16 colours.
+* The first colour of the palette is transparent.
+
+A BMP named as the folder of the project (e.g. `hello-world-nds.bmp`) is used instead of `icon.bmp` if there is one.
+
+With [`bmde`](https://github.com/URV-teacher/bmde) you can also use an icon from anywhere, without replacing
+`icon.bmp`: `bmde build --icon path/to/icon.bmp` (or `icon = "path/to/icon.bmp"` under `[build]` in `bmde.toml`). See
+[the documentation of `bmde build`](https://urv-teacher.github.io/bmde/commands/build/).
+
+Do not set `ICON` in the `Makefile` to use another image: it converts it to a GRF with `grit`, which the `ndstool` of
+devkitARM r46 does not read correctly (the icon comes out with the wrong colours).
+
 ###### Workflow
 There is also a GitHub workflow that is triggered on every push to `master` branch to compile the project and release
 it. You can download the `.nds` from [there](https://github.com/URV-teacher/hello-world-nds/releases/tag/v1.0) to try it
