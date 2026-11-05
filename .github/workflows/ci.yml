@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: aleixmt/devkitarm-nds:latest
+    defaults:
+      run:
+        # The steps of a container run with sh by default, which does not load BASH_ENV, where the image sets DEVKITARM
+        shell: bash
 
     steps:
       - name: Checkout Code
